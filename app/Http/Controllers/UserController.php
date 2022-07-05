@@ -2,18 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\user\IndexRequest;
+use App\Traits\Responser;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    use Responser;
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(IndexRequest $request)
     {
-        //
     }
 
     /**
